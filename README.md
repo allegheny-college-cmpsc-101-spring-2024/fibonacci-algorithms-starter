@@ -123,7 +123,7 @@ correct implementation of all the program's features, running it with the
 command `poetry run fibonaccicreator --number 10 --approach recursivelist
 --display`, it will produce output like the following.
 
-```
+```cmd
 🧳 Awesome, the chosen type of approach is the recursivelist!
 
 🧮 The program will compute up to the 10th Fibonacci number!
