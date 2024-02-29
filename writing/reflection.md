@@ -1,18 +1,8 @@
 # Fibonacci Algorithms
 
-TODO: Make sure that you delete all of the TODO markers and either delete
-and/or rephrase all of the prompts inside of this file. When you are finished
-writing this reflection it should contain technical details, empirical results,
-and an analysis of the results that are suitable for publication on your
-professional web site. You should also make sure that there are no writing
-mistakes or mistakes in the use of Markdown inside of this file.
-
-TODO: Please note that there are certain packages used in the source code for
-this project that may not work and/or be fully supported on the Windows and MacOS
-operating systems. This is due to the fact that these operating systems do not
-provide certain standard features that are available in the Linux operating
-system. Please check with the course instructor if it seems that your operating
-system does not support certain packages or it yields unexpected results.
+TODO: Please note that your writing must be original and based on your
+own understanding of the concepts. Assignment with non-original writing
+will not be graded.
 
 ## Add Your Name Here
 
@@ -23,25 +13,20 @@ system does not support certain packages or it yields unexpected results.
 TODO: Use eight fenced code blocks to provide the outputs under the headings
 below.
 
-TODO: Read these next TODOs to understand how to run your experiment.
+TODO: Read these next instructions to understand how to run your experiment.
 
-TODO: If an algorithm does not work correctly and you can explain why it does
-not work, then please provide that output in one of the fenced code blocks
-under the correct heading below.
-
-TODO: Whenever possible, please use the same "small" and "large" inputs for both
-the List-based and Tuple-based algorithms.
-
-TODO: Use the `--pyinstrument` command-line argument to open up a web-based display
-of the call profile from running your program. You can use this output to understand
-the other profiling information that `fibonaccicreator` can produce.
-
-TODO: Do not run the program with the `--display` option when conducting
-experiments!
-
-TODO: Document and justify your choice for the `number` parameter.
-
-TODO: You can place all of the fenced code blocks in the following sections.
+- If an algorithm does not work correctly and you can explain why it does
+  not work, then please provide that output in one of the fenced code blocks
+  under the correct heading below.
+- Whenever possible, please use the same "small" and "large" inputs for both
+  the List-based and Tuple-based algorithms.
+- Use the `--pyinstrument` command-line argument to open up a web-based display
+  of the call profile from running your program. You can use this output to understand
+  the other profiling information that `fibonaccicreator` can produce.
+- Do not run the program with the `--display` option when conducting
+  experiments!
+- Document and justify your choice for the `number` parameter.
+- You can place all of the fenced code blocks in the following sections.
 
 #### Two outputs from running the `iterativetuple`
 
@@ -122,8 +107,7 @@ TODO: Provide a one-paragraph response that answers this question in your own wo
 
 TODO: Provide a one-paragraph response that answers this question in your own words.
 
-TODO: Please write the commands you used for fixing errors reported by black
-and isort.
+TODO: Please write the command you used for fixing errors reported by `ruff`.
 
 Last TODO: Please copy lines 204-206 in the gatorgrade.yml file and explain why
 this command is not run with the recursive functions.
