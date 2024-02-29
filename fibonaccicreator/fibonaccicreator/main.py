@@ -16,8 +16,8 @@ import time
 # course instructor about an alternative arrangement. With that said,
 # this import and the use of its modules in this program should normally
 # work correctly on both the MacOS and Linux operating systems.
-
-from resource import getrusage, RUSAGE_SELF
+if os.name != "nt":
+    from resource import getrusage, RUSAGE_SELF
 
 from fibonaccicreator import fibonacci
 
@@ -31,17 +31,15 @@ cli = typer.Typer()
 # create a Profiler object to support timing program code segments
 profiler = Profiler()
 
-# TODO: Certain versions of MacOS do not support the calculation
-# of human-readable memory in bytes in a standard fashion. As such,
-# you may need to re-write one or more lines of source code in this
-# function if you notice that the program is reporting that it is
-# using either kilo-bytes (KB) or giga-bytes (GB) of memory. In
-# particular, using only a few KB of memory would probably be too little
-# and using many GB of memory would probably be too much!
-
-
 def format_bytes(size_of_memory_used) -> str:
     """Formats the size_of_memory_used into a string representing the value in bytes in a human-readable fashion."""
+    # TODO: Certain versions of MacOS do not support the calculation
+    # of human-readable memory in bytes in a standard fashion. As such,
+    # you may need to re-write one or more lines of source code in this
+    # function if you notice that the program is reporting that it is
+    # using either kilo-bytes (KB) or giga-bytes (GB) of memory. In
+    # particular, using only a few KB of memory would probably be too little
+    # and using many GB of memory would probably be too much!
     # Reference:
     # https://stackoverflow.com/questions/12523586/python-format-size-application-converting-b-to-kb-mb-gb-tb/37423778
     power = 2 ** 10
@@ -76,7 +74,6 @@ def fibonaccicreator(
     console.print("")
     # construct the full name of the function to call
     function = FIBONACCI_FUNCTION_BASE + UNDERSCORE + approach
-    # construct the requested function from the compute module
     # Reference: https://stackoverflow.com/questions/3061/calling-a-function-of-a-module-by-using-its-name-a-string
     function_to_call = getattr(fibonacci, function)
     # call the constructed function and capture the result
@@ -116,7 +113,10 @@ def fibonaccicreator(
     # your operating system and the way in which it reports memory use.
     # https://pythonspeed.com/articles/estimating-memory-usage/
     # https://stackoverflow.com/questions/12050913/whats-the-unit-of-ru-maxrss-on-linux
-    console.print("   " + format_bytes(getrusage(RUSAGE_SELF).ru_maxrss * 1024))
+    if os.name != "nt":
+        console.print("   " + format_bytes(getrusage(RUSAGE_SELF).ru_maxrss * 1024))
+    else:
+        console.print("   " + format_bytes(psutil.Process().memory_info().peak_wset))
     console.print()
     # display a simplified execution time
     # Reference:

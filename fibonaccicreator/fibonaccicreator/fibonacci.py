@@ -2,15 +2,9 @@
 
 # TODO: Import all of the needed type annotations
 
-# TODO: Refer to the course slides for more details about how to
-# implement these functions
-
 # TODO: Refer to your results from running experiments as part of a
 # previous engineering effort to develop working hypotheses about the
 # performance characteristics of these functions.
-
-# TODO: Read about implementing functions to generate the fibonacci sequence
-# https://realpython.com/fibonacci-sequence-python/
 
 def fibonacci_recursivelist(number: int) -> List[int]:
     """Start with 0 and compute up to and include the number-th Fibonacci number using recursion and a list."""
