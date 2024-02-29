@@ -10,22 +10,20 @@
 
 ## Introduction
 
-- Due date: Check the [Proactive Programmers Discord
-server](https://discord.gg/kjah8MFYbR).
-- This assignment will be submitted on GitHub following
-the expectations in the syllabus on
-[Assignment Submission](https://github.com/allegheny-college-cmpsc-101-fall-2023/course-materials#assignment-submission).
-- To begin, read this `README` and the Proactive Programmers' project
-description for
-[Fibonacci Algorithms](https://proactiveprogrammers.com/data-abstraction/engineering-efforts/fibonacci-algorithms/)
+- Due date: Check Discord or the
+  [Course Materials Schedule](https://github.com/allegheny-college-cmpsc-101-spring-2024/course-materials/blob/main/Schedule.md)
+- This assignment is graded as
+  described in the syllabus section for
+  [Assignment Evaluation](https://github.com/allegheny-college-cmpsc-101-spring-2024/course-materials?tab=readme-ov-file#assignment-evaluation)
+- Submit this assignment on GitHub following the expectations in the syllabus on
+  [Assignment Submission](https://github.com/allegheny-college-cmpsc-101-spring-2024/course-materials#assignment-submission).
+- To begin, read this `README` based on the Proactive Programmers' project
+  [instructions](https://proactiveprogrammers.com/data-abstraction/engineering-efforts/fibonacci-algorithms/)
+- This project has been adapted from Proactive Programmers' material, thus discrepancies are possible.
+- Post to the #data-structures Discord channel for questions and clarifications.
+- For reference, check the
+  [starter repo](https://github.com/allegheny-college-cmpsc-101-spring-2024/fibonacci-algorithms-starter)
 - Modifications to the gatorgrade.yml file are not permitted without explicit instruction.
-- This assignment is an Engineering Effort and will be evaluated as
-described in the
-[Assessment Strategies for Engineering Efforts](https://proactiveprogrammers.com/proactive-learning/assessment-strategy/#engineering-efforts).
-- You can check the
-[fibonacci-algorithms-starter repository](https://github.com/allegheny-college-cmpsc-101-fall-2023/fibonacci-algorithms-starter)
-for any updates to this project's documentation or
-source code.
 
 ## Learning Objectives
 
@@ -34,7 +32,7 @@ duplicates in multiple ways.
 The learning objectives of this assignment are to:
 
 1. Use Git and GitHub to manage source code file changes
-2. Implement fibonacci algorithms using recursive and iterative constructions
+2. Implement and compare fibonacci algorithms using recursive and iterative constructions
 3. Use Pythonic expressions to manipulate data containers and code cleanly
 4. Use ruff instead of black, isort, flake8, pylint, pydocstyle
 5. Write clearly about the programming concepts in this assignment
