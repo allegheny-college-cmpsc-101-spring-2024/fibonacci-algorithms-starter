@@ -51,7 +51,7 @@ setup: |
     - description: Import the Tuple type annotation from the typing package in fibonacci.py
       check: MatchFileFragment
       options:
-        fragment: from typing import Tuple
+        fragment: Tuple
         count: 1
         exact: false
     - description: Return a tuple that only contains the values 0 and 1 inside of it in fibonacci.py
